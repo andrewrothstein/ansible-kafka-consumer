@@ -1,0 +1,20 @@
+---
+- name: install kafka/config/consumer.properties
+  become: yes
+  become_user: root
+  with_items:
+    - kafka/config/consumer.properties
+  template: >-
+    src={{item}}.j2
+    dest={{kafka_install_parent_dir}}/{{item}}
+    mode=0644
+
+- name: setup login shells with env vars
+  become: yes
+  become_user: root
+  with_items:
+    - etc/profile.d/kafka-consumer.sh
+  template: >-
+    src={{item}}.j2
+    dest=/{{item}}
+    mode=0644 
