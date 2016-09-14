@@ -23,7 +23,7 @@ zookeeper.connect={{kafka_zk_connect}}
 zookeeper.connection.timeout.ms={{kafka_zk_connection_timeout_ms|default(6000)}}
 
 #consumer group id
-group.id={{kafka_zk_group_id|default(test-consumer-group)}}
+group.id={{kafka_zk_group_id|default('test-consumer-group')}}
 
 #consumer timeout
 #consumer.timeout.ms=5000
