@@ -2,5 +2,4 @@
 kafka_install_parent_dir: /opt
 kafka_log_dirs : /var/log/kafka
 kafka_iface : eth0
-kafka_zk_connection_timeout_ms: 6000
 kafka_zk_group_id: test-consumer-group
