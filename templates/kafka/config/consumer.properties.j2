@@ -14,16 +14,9 @@
 # limitations under the License.
 # see kafka.consumer.ConsumerConfig for more details
 
-# Zookeeper connection string
-# comma separated host:port pairs, each corresponding to a zk
-# server. e.g. "127.0.0.1:3000,127.0.0.1:3001,127.0.0.1:3002"
-zookeeper.connect={{kafka_zk_connect}}
-
-# timeout in ms for connecting to zookeeper
-zookeeper.connection.timeout.ms={{kafka_zk_connection_timeout_ms|default(6000)}}
+# list of brokers used for bootstrapping knowledge about the rest of the cluster
+# format: host1:port1,host2:port2 ...
+bootstrap.servers={{kafka_broker_connect}}
 
 #consumer group id
 group.id={{kafka_zk_group_id|default('test-consumer-group')}}
-
-#consumer timeout
-#consumer.timeout.ms=5000
