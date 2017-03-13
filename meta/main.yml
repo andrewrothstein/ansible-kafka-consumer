@@ -13,13 +13,16 @@ galaxy_info:
     - name: Fedora
       versions:
         - 23
+        - 24
+        - 25
     - name: Ubuntu
       versions:
         - xenial
+        - trusty
   galaxy_tags:
     - development
 
 dependencies:
   - role: andrewrothstein.kafka
-    version: v2.0.2
+    version: v3.0.2
   

@@ -1,5 +1,9 @@
 ---
 kafka_install_parent_dir: /opt
 kafka_log_dirs : /var/log/kafka
+
+kafka_port: 9202
+kafka_use_ips: False
 kafka_iface : eth0
+
 kafka_zk_group_id: test-consumer-group
