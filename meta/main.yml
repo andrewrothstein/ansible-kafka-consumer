@@ -19,10 +19,16 @@ galaxy_info:
       versions:
         - xenial
         - trusty
+    - name: Debian
+      versions:
+        - jessie
+    - name: Alpine
+      versions:
+        - all
   galaxy_tags:
     - development
 
 dependencies:
   - role: andrewrothstein.kafka
-    version: v3.0.2
+    version: v3.0.3
   

@@ -1,5 +1,6 @@
 andrewrothstein.kafka-consumer
 =========
+[![Build Status](https://travis-ci.org/andrewrothstein/ansible-kafka-consumer.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-kafka-consumer)
 
 A [Kafka](https://kafka.apache.org/) consumer.
 
