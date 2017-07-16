@@ -30,5 +30,5 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.kafka
-    version: v3.0.3
+    version: v3.0.5
   
