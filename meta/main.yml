@@ -15,6 +15,7 @@ galaxy_info:
         - 23
         - 24
         - 25
+        - 26
     - name: Ubuntu
       versions:
         - xenial
@@ -22,6 +23,7 @@ galaxy_info:
     - name: Debian
       versions:
         - jessie
+        - stretch
     - name: Alpine
       versions:
         - all
@@ -30,5 +32,4 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.kafka
-    version: v3.0.5
-  
+    version: v3.1.0
