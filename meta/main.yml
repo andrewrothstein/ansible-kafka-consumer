@@ -32,4 +32,4 @@ galaxy_info:
 
 dependencies:
   - role: andrewrothstein.kafka
-    version: v3.1.2
+    version: v3.1.4
