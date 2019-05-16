@@ -1,35 +1,33 @@
----
+dependencies:
+- role: andrewrothstein.kafka
+  version: v4.0.0
 galaxy_info:
   author: Andrew Rothstein
-  description: 'kafka consumer configurator'
   company: BlackRock
+  description: kafka consumer configurator
+  galaxy_tags:
+  - development
   license:
-    - MIT
+  - MIT
   min_ansible_version: 2.0
   platforms:
-    - name: EL
-      versions:
-        - 7
-    - name: Fedora
-      versions:
-        - 23
-        - 24
-        - 25
-        - 26
-    - name: Ubuntu
-      versions:
-        - xenial
-        - trusty
-    - name: Debian
-      versions:
-        - jessie
-        - stretch
-    - name: Alpine
-      versions:
-        - all
-  galaxy_tags:
-    - development
-
-dependencies:
-  - role: andrewrothstein.kafka
-    version: v3.1.4
+  - name: EL
+    versions:
+    - 7
+  - name: Fedora
+    versions:
+    - 23
+    - 24
+    - 25
+    - 26
+  - name: Ubuntu
+    versions:
+    - xenial
+    - trusty
+  - name: Debian
+    versions:
+    - jessie
+    - stretch
+  - name: Alpine
+    versions:
+    - all
