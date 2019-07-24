@@ -1,2 +1,2 @@
 ---
-kafka_broker_connect : "{% for host in groups['kafka'] %}{% if kafka_use_ips %}{{hostvars[host]['ansible_' + kafka_iface]['ipv4']['address']}}{% else %}{{host}}{% endif %}:{{kafka_port}}{% if not loop.last %},{% endif %}{% endfor %}"
+kafka_broker_connect: "{% for host in groups['kafka'] %}{% if kafka_use_ips %}{{ hostvars[host]['ansible_' + kafka_iface]['ipv4']['address'] }}{% else %}{{ host }}{% endif %}:{{ kafka_port }}{% if not loop.last %},{% endif %}{% endfor %}"

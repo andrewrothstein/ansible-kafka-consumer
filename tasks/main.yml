@@ -4,15 +4,15 @@
   become_user: root
   with_items:
     - f: consumer.properties
-      d: '{{kafka_dir}}/config'
+      d: '{{kafka_dir }}/config'
       m: '0644'
     - f: simple-test-run-console-consumer.sh
-      d: '{{kafka_dir}}/bin'
+      d: '{{ kafka_dir }}/bin'
       m: '0755'
     - f: kafka-consumer.sh
       d: /etc/profile.d
       m: '0644'
   template:
-    src: '{{item.f}}.j2'
-    dest: '{{item.d}}/{{item.f}}'
-    mode: '{{item.m}}'
+    src: '{{ item.f }}.j2'
+    dest: '{{ item.d }}/{{ item.f }}'
+    mode: '{{ item.m }}'
