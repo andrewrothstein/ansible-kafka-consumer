@@ -4,7 +4,7 @@
   become_user: root
   with_items:
     - f: consumer.properties
-      d: '{{kafka_dir }}/config'
+      d: '{{ kafka_dir }}/config'
       m: '0644'
     - f: simple-test-run-console-consumer.sh
       d: '{{ kafka_dir }}/bin'
